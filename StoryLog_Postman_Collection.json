@@ -1,0 +1,102 @@
+{
+  "info": {
+    "_postman_id": "1e7a2743-5bfb-4b88-9e9b-796a13aab8ec",
+    "name": "StoryLog API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get all entries",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/entries",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["entries"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get entry by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/entries/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["entries", "1"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create new entry",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"My first entry\",\n  \"content\": \"This is a sample journal entry.\",\n  \"moodScore\": 5\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/entries",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["entries"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update entry",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Updated title\",\n  \"content\": \"Updated content\",\n  \"moodScore\": 3\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/entries/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["entries", "1"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete entry",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/entries/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["entries", "1"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
