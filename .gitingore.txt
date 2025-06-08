@@ -1,0 +1,19 @@
+# Ignore node modules
+node_modules/
+
+# Ignore environment variables
+.env
+
+# Ignore logs
+*.log
+logs/
+
+# Ignore system files
+.DS_Store
+
+# Ignore database files
+*.sqlite
+*.db
+
+# Ignore Postman environment/config files
+*.postman_environment.json
