@@ -16,7 +16,7 @@ A Node.js-based journaling API using Express and MySQL that allows users to crea
 - Node.js
 - Express.js
 - JSON Web Token (JWT) for authentication (if implemented)
-- Any SQL/NoSQL database (e.g., MySQL, PostgreSQL, MongoDB)
+- MYSQL Database
 
 ---
 
