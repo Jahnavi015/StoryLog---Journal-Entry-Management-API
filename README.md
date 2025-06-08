@@ -25,7 +25,7 @@ A Node.js-based journaling API using Express and MySQL that allows users to crea
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) installed (v14 or higher recommended)
-- Database setup (MySQL/PostgreSQL/MongoDB)
+- Database setup MYSQL
 - Postman (optional, for testing)
 
 ### Installation
